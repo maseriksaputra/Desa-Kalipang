@@ -1,0 +1,965 @@
+
+
+
+PROPOSAL PENELITIAN 
+Untuk memenuhi persyaratan mencapai gelar Sarjana Ilmu Komputer
+ 
+ 
+Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping
+
+Oleh 
+AGUS CONDRO WIBOWO
+NIM :  2207002
+
+
+PROGRAM STUDI ILMU KOMPUTER 
+FAKULTAS SAINS DAN KESEHATAN 
+UNIVERSITAS AN NUUR 
+PURWODADI 
+2026
+
+
+
+PROPOSAL PENELITIAN 
+Untuk memenuhi persyaratan mencapai gelar Sarjana Ilmu Komputer
+ 
+ 
+Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping 
+
+Oleh 
+AGUS CONDRO WIBOWO
+NIM :  2207002
+ 
+PROGRAM STUDI ILMU KOMPUTER 
+FAKULTAS SAINS DAN KESEHATAN 
+UNIVERSITAS AN NUUR 
+PURWODADI 
+2026 
+
+HALAMAN PERSETUJUAN 
+  
+Proposal Penelitian ini telah disetujui, diperiksa, dan siap dipertahankan di hadapan penguji Proposal Penelitian pada Program Studi Ilmu Komputer Fakultas Sains dan Kesehatan Universitas An Nuur. 
+ 
+Pembimbing I Pembimbing II 
+  
+  
+Dhika Malita Puspita Arum, M.Kom. Eko Supriyadi, S.Kom.,M.Tr.Kom 
+NIDN. 0611039202    NIDN. 0618037601 
+ 
+ 
+Mengetahui
+ 
+Dekan Fakultas Sains dan Kesehatan Ka. Prodi Ilmu Komputer 
+  
+  
+Suryani, S.Kep., Ns., M.Kep Eko Supriyadi, S.Kom., M.Tr.Kom. 
+NIDN. 0629107901 NIDN. 0618037601 
+ 
+ 
+ 
+ 
+ 
+
+HALAMAN PENGESAHAN
+Proposal Penelitian oleh Agus Condro Wibowo, NIM 2207002  dengan judul “Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping ”, telah dipertahankan di depan dewan penguji pada tanggal 28 Februari 2025 Purwodadi, Tanggal Bulan Tahun  
+Penguji I Tanda Tangan 
+  
+Andri Triyono, S.T., M.T  
+NIDN. 0620068802 ………….. 
+  
+Penguji II Tanda Tangan 
+  
+Eko Supriyadi, S.Kom., M.Tr.Kom  
+NIDN. 0618037601 ………….. 
+  
+Penguji III Tanda Tangan 
+  
+Kartika Imam Santoso,S.E., S.Kom.,M.Kom  
+NIDN. 06140371003 
+………….. 
+ 
+Mengetahui, 
+Dekan FK. Sains dan Kesehatan 
+Ka. Prodi Ilmu Komputer 
+
+ 
+Suryani, S.Kep., Ns., MKep 
+NIDN. 0629107901 
+Eko Supriyadi, S.Kom., M.Tr.Kom 
+NIDN. 0618037601 
+KATA PENGANTAR
+Puji dan syukur senantiasa penulis panjatkan kehadirat Allah subhanahu wa ta’ala atas berkat rahmat, serta hidayah-Nya, sehingga penulis dapat menyelesaikan laporan proposal yang berjudul “Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping ” dengan baik dan lancar. Proposal ini ajukan untuk memenuhi salah satu syarat kelulusan Program Studi Ilmu Komputer Fakultas Sains dan Kesehatan Universitas Annur Purwodadi. 
+Pada kesempatan ini penulis juga mengucapkan terimakasih yang sebesar-besarnya kepada: 
+Ibu nama Dhika Malita Puspita Arum.M.Kom sebagai pembimbing 1 yang telah memberikan bimbingan dan masukan dalam penyusunan proposal penelitian ini. 
+Bapak Eko Supriyadi. S.Kom.,M.Tr.Kom sebagai dosen pembimbing 2 yang telah meluangkan waktu untuk membimbing dan memberi masukan dalam penyusunan proposal penelitian ini 
+Orang tua penulis yang telah memberikan doa,dukungan,dan juga semangat selama penyusunan proposal. 
+Teman-teman seperjuangan yang tidak dapat disebutkan satu persatu yang telah banyak membantu penulis dalam menyelesaikan proposal penelitian ini. 
+Akhirnya penulis menyadari bahwa dalam penyusunan proposal ini masih jauh dari kata sempurna. Maka dari itu penulis menerima saran, kritik dan masukan yang bersifat membangun dari segala pihak. 
+Purwodadi, 3 Februari 2026
+ 
+       Agus Condro Wibowo
+
+DAFTAR ISI 
+
+ TOC \o "1-3" \h \z \u HALAMAN PERSETUJUAN PAGEREF _Toc222751527 \h ii
+HALAMAN PENGESAHAN PAGEREF _Toc222751528 \h iii
+KATA PENGANTAR PAGEREF _Toc222751529 \h iv
+DAFTAR ISI PAGEREF _Toc222751530 \h v
+DAFTAR GAMBAR PAGEREF _Toc222751531 \h vii
+DAFTAR TABEL PAGEREF _Toc222751532 \h viii
+DAFTAR LAMPIRAN PAGEREF _Toc222751533 \h ix
+BAB I  PENDAHULUAN PAGEREF _Toc222751534 \h 1
+1.1 Latar Belakang PAGEREF _Toc222751535 \h 1
+1.2 Rumusan Masalah PAGEREF _Toc222751536 \h 4
+1.5 Manfaat penelitian PAGEREF _Toc222751537 \h 6
+1.6 Sistematika Penulisan PAGEREF _Toc222751538 \h 7
+Tabel 1.1 Penelitian Terkait PAGEREF _Toc222751539 \h 8
+BAB II TINJAUAN PUSTAKA PAGEREF _Toc222751540 \h 12
+2.1 Konsep Sistem Informasi Desa &amp; E-Government PAGEREF _Toc222751541 \h 12
+2.2 Website &amp; Portal Informasi PAGEREF _Toc222751542 \h 12
+2.3 Sistem Layanan Pengaduan Masyarakat PAGEREF _Toc222751543 \h 13
+2.4 Metodologi Prototyping PAGEREF _Toc222751544 \h 14
+2.4.1 Tahapan Metodologi Prototyping PAGEREF _Toc222751545 \h 15
+2.5 Tools Pengembangan PAGEREF _Toc222751546 \h 16
+2.5.1 PHP dan Framework Laravel PAGEREF _Toc222751547 \h 16
+2.5.2 Database MySQL PAGEREF _Toc222751548 \h 16
+2.5.3 Unified Modeling Language (UML) PAGEREF _Toc222751549 \h 17
+BAB III METODOLOGI PENELITIAN PAGEREF _Toc222751550 \h 18
+3.1 Jenis Penelitian PAGEREF _Toc222751551 \h 18
+3.2 Fokus Penelitian PAGEREF _Toc222751552 \h 18
+3.4 Tahapan Penelitian PAGEREF _Toc222751553 \h 20
+3.4.1 Identifikasi Masalah PAGEREF _Toc222751554 \h 20
+3.4.2 Studi Literatur PAGEREF _Toc222751555 \h 20
+3.4.3 Pengumpulan Data PAGEREF _Toc222751556 \h 21
+3.4.4 Analisis dan Perancangan PAGEREF _Toc222751557 \h 22
+3.4.5 Pengembangan Sistem (Prototyping) PAGEREF _Toc222751558 \h 23
+3.4.6 Pengujian (Testing) PAGEREF _Toc222751559 \h 24
+3.4.7 Implementasi dan Kesimpulan PAGEREF _Toc222751560 \h 24
+Daftar Pustaka PAGEREF _Toc222751561 \h 25
+
+
+ 
+DAFTAR GAMBAR 
+ 
+Gambar 3.1 Diagram Alur Tahapan Penelitian
+19 
+Gambar 3.2 Flowchart
+22 
+Gambar 3.3 Use Case Diagram 
+23 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+DAFTAR TABEL 
+Tabel 1.1 Penelitian Terkait
+9 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+DAFTAR LAMPIRAN 
+Lampiran 1 Jadwal penelitian 
+24 
+Lampiran 2 Catatan hasil konsultasi skripsi 
+25 
+Lampiran 3 Form kesediaan sebagai pembimbing skripsi 
+27 
+Lampiran 4 Fakta integritas pembimbing 
+29 
+Lampiran 5 Form kesediaan sebagai penguji 
+31 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+BAB I  PENDAHULUAN 
+ 
+Latar Belakang 
+Transformasi digital telah menjadi paradigma dominan dalam reformasi tata kelola pemerintahan global pada abad ke-21. Pergeseran dari administrasi konvensional menuju Electronic Government (E-Government) bukan lagi sekadar pilihan, melainkan sebuah imperatif strategis untuk meningkatkan kualitas pelayanan publik, transparansi, dan akuntabilitas. Di Indonesia, komitmen terhadap digitalisasi pemerintahan dipertegas melalui Peraturan Presiden Nomor 95 Tahun 2018 tentang Sistem Pemerintahan Berbasis Elektronik (SPBE), yang mengamanatkan integrasi teknologi informasi di seluruh tingkatan pemerintahan, mulai dari pusat hingga unit terkecil yaitu desa (Pemerintah Republik Indonesia, 2018). Konsep ini kemudian diterjemahkan secara spesifik ke dalam program Smart Village atau Desa Cerdas, yang bertujuan untuk memberdayakan komunitas pedesaan melalui pemanfaatan teknologi digital guna mengakselerasi pembangunan ekonomi dan sosial.
+Meskipun visi digitalisasi nasional telah dicanangkan dengan jelas, realitas di lapangan menunjukkan adanya kesenjangan digital (digital divide) yang signifikan antara wilayah perkotaan dan pedesaan. Berdasarkan laporan International Telecommunication Union (ITU) tahun 2024, meskipun 83% penduduk perkotaan telah terhubung dengan internet, penetrasi di wilayah pedesaan masih tertinggal jauh, menciptakan hambatan struktural dalam akses informasi dan layanan publik (International Telecommunication Union, 2024). Data dari Asosiasi Penyelenggara Jasa Internet Indonesia (APJII) tahun 2024 mengonfirmasi fenomena ini di tingkat nasional, di mana kontribusi pengguna internet dari wilayah pedesaan (rural) hanya sebesar 30,5%, jauh di bawah wilayah perkotaan (urban) yang mendominasi sebesar 69,5% (Asosiasi Penyelenggara Jasa Internet Indonesia, 2024). Disparitas ini berimplikasi langsung pada lambatnya adopsi layanan publik digital di tingkat desa, yang sering kali masih terjebak dalam proses administrasi manual, lambat, dan rentan terhadap inefisiensi.
+Dalam konteks regional, Provinsi Jawa Tengah dan khususnya Kabupaten Grobogan, sedang giat mendorong implementasi sistem pemerintahan digital. Pemerintah Kabupaten Grobogan telah meluncurkan berbagai inisiatif, seperti Mal Pelayanan Publik (MPP) dan sistem administrasi kependudukan daring (e-Simpel) (Pemerintah Kabupaten Grobogan, 2024).
+Namun, tantangan geografis dan infrastruktur masih menjadi kendala utama. Banyak desa di Kabupaten Grobogan yang belum memiliki sarana informasi terintegrasi, sehingga masyarakat yang tinggal jauh dari pusat pemerintahan kabupaten sering kali mengalami kesulitan dalam mengakses informasi resmi atau menyampaikan aspirasi mereka. Masalah klasik pelayanan publik di tingkat desa, seperti ketidakjelasan prosedur, waktu pelayanan yang tidak pasti, dan kurangnya transparansi dalam penanganan pengaduan, masih sering dikeluhkan oleh masyarakat (Ombudsman Republik Indonesia, 2023). Sekretaris Daerah Kabupaten Grobogan pada tahun 2024 secara spesifik menyoroti bahwa salah satu permasalahan utama pelayanan publik adalah tidak terpublikasinya informasi standar pelayanan secara luas dan mudah diakses, yang sering kali memicu kesalahpahaman dan ketidakpuasan warga.
+Konteks spesifik permasalahan ini terlihat jelas di Desa Kalipang, Kecamatan Gabus, Kabupaten Grobogan. Desa Kalipang merupakan salah satu entitas pemerintahan desa dengan jumlah penduduk yang cukup signifikan, mencapai 3.904 jiwa pada data semester kedua tahun 2022 (Pemerintah Desa Kalipang, 2022). Sebagai desa yang sedang berkembang, Desa Kalipang memiliki potensi ekonomi dan sosial yang besar, namun pengelolaan informasi dan layanan publiknya saat ini masih sangat konvensional. Kondisi administrasi yang masih manual ini menjadi tantangan tersendiri dalam memberikan pelayanan prima kepada masyarakat. Berdasarkan observasi awal dan analisis situasi di lapangan, terdapat beberapa permasalahan mendasar yang menghambat optimalisasi pelayanan publik di Desa Kalipang:
+Keterbatasan Akses Informasi: Penyampaian informasi mengenai program desa, bantuan sosial, dan kegiatan pembangunan masih mengandalkan metode lisan (gethok tular) atau papan pengumuman fisik di balai desa. Hal ini menyebabkan informasi sering kali tidak sampai kepada seluruh warga secara merata dan tepat waktu. Urgensi kebutuhan sistem informasi yang cepat dan akurat menjadi sangat nyata ketika terjadi insiden darurat, seperti kebakaran rumah warga di Dusun Karanganyar, Desa Kalipang, pada Juni 2025 (Keterbatasan Akses Informasi: Penyampaian informasi mengenai program desa, 2025). Keterlambatan distribusi informasi dalam situasi krisis dapat berdampak fatal pada respons bantuan dan mitigasi bencana.
+Manajemen Pengaduan yang Tidak Transparan: Saat ini, belum ada kanal formal berbasis digital bagi warga Desa Kalipang untuk menyampaikan pengaduan, kritik, atau saran. Warga harus datang langsung ke balai desa untuk melapor, yang sering kali terhalang oleh jam kerja atau kendala jarak. Lebih lanjut, pengaduan yang disampaikan secara manual sering kali tidak terdokumentasi dengan baik, sehingga warga tidak dapat memantau status penyelesaian masalah mereka. Kondisi ini berpotensi menurunkan kepercayaan publik (public trust) terhadap kinerja pemerintah desa (Hardiyansyah, 2018).
+Inefisiensi Administratif: Proses pendataan dan pelayanan administrasi yang masih manual meningkatkan risiko human error, duplikasi data, dan waktu pemrosesan yang lama. Hal ini bertentangan dengan semangat reformasi birokrasi yang menuntut efisiensi dan efektivitas (Indana, 2025).
+Sebagai solusi atas permasalahan tersebut, penelitian ini mengusulkan pengembangan "Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web". Pemilihan platform berbasis Web didasarkan pada pertimbangan aksesibilitas yang luas (ubiquitous access). Aplikasi web dapat diakses melalui berbagai perangkat (smartphone, tablet, laptop) tanpa perlu instalasi khusus yang membebani memori perangkat pengguna, yang sangat relevan dengan karakteristik perangkat yang dimiliki oleh mayoritas warga desa (Pressman, 2020).
+Metodologi pengembangan sistem yang dipilih dalam penelitian ini adalah Prototyping. Pemilihan metode ini didasari oleh kebutuhan untuk menjembatani komunikasi teknis antara pengembang (peneliti) dengan perangkat Desa Kalipang yang bertindak sebagai pengguna utama. Metode Prototyping memungkinkan pembuatan model awal (prototipe) perangkat lunak yang dapat didemonstrasikan dan dievaluasi langsung oleh pengguna sebelum sistem final dibangun secara utuh. Pendekatan tradisional seperti Waterfall dinilai kurang cocok karena sifatnya yang linier dan kaku, di mana perubahan kebutuhan di tengah proses pengembangan sulit diakomodasi. Sebaliknya, Prototyping menawarkan pendekatan interaktif di mana pengembang dan perangkat desa dapat berkolaborasi secara intensif. Melalui evaluasi prototipe secara berkala, setiap umpan balik dari perangkat desa dapat langsung diterapkan, sehingga meminimalisir kesalahan pemahaman sistem dan memastikan tingkat penerimaan pengguna (User Acceptance) yang tinggi.
+Penelitian ini memberikan nilai tambah pada pengembangan sistem informasi desa terdahulu dengan mengintegrasikan fungsi Portal Informasi Publik dan Sistem Layanan Pengaduan Interaktif dalam satu wadah. Meskipun beberapa penelitian sebelumnya telah membahas fitur serupa secara parsial, penelitian ini secara khusus berfokus pada penerapan metode Prototyping untuk menyesuaikan sistem dengan konteks lokal. Melalui siklus perbaikan prototipe secara iteratif, penelitian ini mengkaji solusi atas tantangan adopsi teknologi dan tingkat literasi digital perangkat desa di lingkungan pedesaan Kabupaten Grobogan.
+
+1.2 Rumusan Masalah   
+ Berdasarkan latar belakang masalah yang telah diuraikan, maka rumusan masalah dalam penelitian ini adalah:
+Bagaimana merancang dan membangun sistem informasi terintegrasi yang mencakup portal informasi publik dan layanan pengaduan masyarakat berbasis web yang sesuai dengan kebutuhan spesifik Desa Kalipang, Kecamatan Gabus, Kabupaten Grobogan?
+Bagaimana implementasi metodologi Prototyping dalam proses pengembangan sistem untuk memastikan fleksibilitas dan kesesuaian fitur aplikasi dengan kebutuhan operasional perangkat desa dan masyarakat?
+
+1.3 Batasan Masalah 
+ Untuk menjaga fokus penelitian agar tidak meluas dan tetap terarah pada tujuan utama, maka ditetapkan batasan-batasan masalah sebagai berikut:
+Fungsionalitas Sistem: Sistem yang dikembangkan mencakup dua modul utama:
+Portal Informasi: Menampilkan profil desa, visi misi, struktur organisasi, berita kegiatan, galeri potensi desa, dan data statistik kependudukan dasar.
+Layanan Pengaduan: Memfasilitasi pelaporan warga (dengan fitur unggah bukti foto), pelacakan status pengaduan (tracking), dan dasbor manajemen pengaduan untuk admin desa.
+Pengguna Sistem: Sistem dirancang untuk dua jenis pengguna (aktor):
+Admin (Perangkat Desa): Memiliki hak akses penuh untuk mengelola konten portal, memverifikasi pengaduan, dan memperbarui status penanganan pengaduan.
+User (Masyarakat/Publik): Dapat mengakses informasi publik, mengirimkan pengaduan, dan memantau status pengaduan mereka.
+Teknologi Pengembangan:
+Sistem dibangun berbasis Web menggunakan bahasa pemrograman PHP.
+Kerangka kerja (framework) yang digunakan adalah Laravel (versi terbaru yang stabil) untuk menjamin keamanan dan kemudahan pengembangan.12
+Basis data menggunakan MySQL.
+Desain antarmuka menggunakan Bootstrap atau library CSS yang responsif.
+Metodologi: Pengembangan sistem menggunakan model Prototyping. Penelitian ini tidak membahas aspek keamanan jaringan secara mendalam atau pengembangan aplikasi mobile native (Android/iOS).
+Lokasi Penelitian: Studi kasus dilakukan di Desa Kalipang, Kecamatan Gabus, Kabupaten Grobogan.
+
+1.4 Tujuan penelitian 
+ Tujuan yang ingin dicapai melalui pelaksanaan penelitian ini adalah:
+Menghasilkan produk perangkat lunak berupa Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang berbasis web yang fungsional, handal, dan mudah digunakan (user-friendly).
+Menerapkan dan mendemonstrasikan efektivitas metode Prototyping dalam pengembangan sistem informasi di lingkungan pemerintahan desa, khususnya dalam mengakomodasi perubahan kebutuhan pengguna melalui evaluasi model awal secara iteratif.
+
+1.5 Manfaat penelitian 
+ Penelitian ini diharapkan dapat memberikan kontribusi dan manfaat nyata bagi berbagai pihak, yaitu:
+Bagi Masyarakat Desa Kalipang:
+Memberikan kemudahan akses terhadap informasi resmi desa (seperti jadwal kegiatan, pengumuman bantuan, dan transparansi anggaran) kapan saja dan di mana saja.
+Menyediakan saluran aspirasi dan pengaduan yang mudah, transparan, dan terukur, sehingga masyarakat tidak perlu ragu atau kesulitan dalam menyampaikan keluhan terkait pelayanan publik atau infrastruktur desa.
+Meningkatkan partisipasi warga dalam pembangunan desa melalui mekanisme umpan balik digital.
+Bagi Pemerintah Desa Kalipang:
+Meningkatkan efisiensi kerja perangkat desa dalam mengelola data informasi dan dokumentasi pengaduan masyarakat.
+Meningkatkan kualitas pelayanan publik dan citra transparansi pemerintah desa di mata masyarakat, sejalan dengan semangat "Desa Anti Korupsi" yang digalakkan di Kabupaten Grobogan.
+Memiliki media promosi digital untuk memperkenalkan potensi desa kepada khalayak yang lebih luas.
+Bagi Akademisi dan Pengembangan Ilmu Pengetahuan:
+Menambah khazanah literatur dan referensi empiris mengenai penerapan metode Prototyping dalam konteks pengembangan E-Government di tingkat desa.
+Menjadi rujukan bagi penelitian selanjutnya yang ingin mengembangkan sistem serupa di wilayah pedesaan dengan karakteristik demografi dan tantangan infrastruktur yang sejenis.
+
+1.6 Sistematika Penulisan 
+Sistematika penulisan proposal skripsi ini disusun sebagai berikut: 
+BAB I: PENDAHULUAN 
+Bab ini menguraikan latar belakang masalah yang mendasari penelitian, identifikasi dan rumusan masalah, batasan masalah, tujuan penelitian, manfaat penelitian, serta sistematika penulisan laporan. Bab ini juga memuat tabel perbandingan penelitian terkait untuk menunjukkan posisi dan kebaruan penelitian ini.
+BAB II: TINJAUAN PUSTAKA
+Bab ini berisi landasan teori yang relevan dengan topik penelitian. Teori-teori yang dibahas meliputi konsep Sistem Informasi Desa (SID), E-Government, Website dan Portal Informasi, Sistem Layanan Pengaduan Masyarakat, serta pembahasan mendalam mengenai metode pengembangan Prototyping. Bab ini juga menjelaskan alat bantu pengembangan sistem seperti PHP, Framework Laravel, Database MySQL, dan UML (Unified Modeling Language).
+BAB III: METODOLOGI PENELITIAN
+Bab ini menjelaskan metode yang digunakan dalam penelitian, mulai dari jenis penelitian (R&amp;D/Applied Research), fokus penelitian, sumber data, desain sistem penelitian (kerangka pikir), metode pengumpulan data, hingga tahapan pengembangan sistem yang merinci implementasi siklus Prototyping (seperti Communication, Quick Plan, Modeling Quick Design, Construction of Prototype, dan Deployment Delivery &amp; Feedback). Bab ini juga menjelaskan metode evaluasi dan validasi sistem yang akan dilakukan.
+BAB IV: HASIL DAN PEMBAHASAN (Rencana)
+Bab ini akan memuat hasil dari analisis kebutuhan, perancangan sistem, implementasi antarmuka dan kode program, serta hasil pengujian sistem (Black Box dan UAT) beserta pembahasannya.
+BAB V: KESIMPULAN (Rencana)
+Bab ini akan berisi kesimpulan dari seluruh rangkaian penelitian dan saran-saran untuk pengembangan sistem lebih lanjut.
+
+1.7 Penelitian Terkait
+Untuk memposisikan penelitian ini dalam konteks akademik dan menunjukkan kebaruan (novelty), berikut disajikan perbandingan dengan lima penelitian terdahulu yang relevan dalam tabel di bawah ini. Referensi dipilih dari jurnal-jurnal terkini (3-5 tahun terakhir) yang membahas Sistem Informasi Desa atau penerapan Prototyping  .
+ 
+Tabel 1.1 Penelitian Terkait 
+Penulis dan Tahun
+Judul
+Hasil / Pencapaian
+Kekurangan (Gap)
+Wandri (2025)
+Prototyping as a Development Approach: A Case Study of Web-based School Information System Design
+Penelitian ini membuktikan bahwa pendekatan Prototyping mampu meningkatkan efisiensi administratif dan mencapai tingkat kepuasan pengguna sebesar 95% dalam pengembangan sistem informasi institusi pendidikan.
+
+Relevansi: Menunjukkan efektivitas metode Prototyping dalam meningkatkan user satisfaction.
+Fokus pada institusi pendidikan, bukan pemerintahan desa yang memiliki tantangan demografi berbeda.
+Indana &amp; Ilmananda (2025)
+Perancangan Sistem Informasi Surat Administrasi Penduduk Elektronik Menggunakan Metode Prototyping
+Menghasilkan sistem layanan surat elektronik di Desa Kerta Jaya yang mengurangi antrian manual. Hasil uji usability mencapai 79,16%.
+Fokus parsial hanya pada administrasi persuratan, belum mencakup portal informasi publik dan pengaduan komprehensif.
+Ola &amp; Hakim (2025)
+Pengembangan Aplikasi Pengaduan Masyarakat DP3A Kabupaten Nabire Berbasis Web Menggunakan Metode Prototyping
+Menghasilkan sistem pengaduan dengan fitur pelacakan status dan unggah bukti foto untuk transparansi. Sistem ini berhasil menggantikan proses manual yang tidak efisien.
+
+Relevansi: Fitur pelacakan status menjadi referensi penting untuk penelitian ini.
+Bersifat sektoral (hanya pengaduan), tidak terintegrasi dengan promosi potensi desa/informasi publik.
+Alam &amp; Azizah (2024)
+Perancangan Sistem Informasi Desa Menggunakan Metode Prototyping
+Membangun website profil dan layanan surat untuk Desa Pungging. Pengujian Black Box menunjukkan keberhasilan 100% pada fungsi admin dan user.
+Lebih fokus pada profil statis dan administratif, kurang menekankan interaksi pengaduan warga dua arah.
+Lutfi (2024)
+Rancang Bangun Sistem Manajemen Pengelolaan Pelayanan dan Pengaduan Masyarakat di Desa Planggiran Menggunakan Metode Prototyping
+Sistem berhasil meningkatkan transparansi status pengaduan dan efisiensi pengelolaan data. Menunjukkan bahwa metode Prototyping efektif untuk pengembangan bertahap di lingkungan desa.
+Belum mengadopsi pendekatan Prototyping secara utuh untuk edukasi perangkat desa terhadap sistem.
+Pratama &amp; Nugraha (2024)
+Implementasi Notifikasi WhatsApp Gateway pada Sistem Pengaduan Masyarakat Desa Berbasis Web
+Mengintegrasikan notifikasi pesan instan (WA) agar admin lebih cepat merespon aduan warga (respon meningkat 40%).
+Fokus utama hanya pada fitur notifikasi, manajemen pengembangan proyek tidak menggunakan metode Prototyping yang terstruktur.
+Kusuma &amp; Wijaya (2023)
+Analisis User Experience (UX) pada Portal Informasi Desa Menggunakan Metode Design Thinking
+Menghasilkan rancangan antarmuka yang sangat mudah digunakan (user-friendly) dengan skor SUS 82.
+Penelitian ini sangat berat pada desain antarmuka (UI/UX), tidak membahas pembangunan sistem backend atau alur penanganan pengaduan.
+Hidayat, T. (2023)
+Penerapan Keamanan Data Penduduk pada Sistem Informasi Desa Menggunakan Kriptografi AES-256
+Berhasil mengamankan data sensitif penduduk dalam database desa dari serangan siber dan akses ilegal.
+Sangat teknis pada aspek keamanan data, fitur interaksi publik dan layanan sosial kemasyarakatan sangat minim.
+Sari &amp; Utami (2024)
+Sistem Informasi Geografis (SIG) Pemetaan Potensi Wisata dan UMKM Desa Berbasis Web
+Menampilkan peta digital interaktif untuk promosi ekonomi desa yang meningkatkan kunjungan wisata.
+Sistem bersifat informatif satu arah (peta visual), tidak memfasilitasi komunikasi dua arah (keluhan/aspirasi) antara warga dan pemerintah.
+Ramadhan (2025)
+Pengujian Black Box dan White Box pada Sistem Pelayanan Desa Berbasis Framework Laravel
+Melakukan pengujian mendalam untuk menemukan bug sistem sebelum rilis guna menjamin kualitas kode.
+Fokus murni pada pengujian perangkat lunak (testing), tidak membahas analisis kebutuhan pengguna atau manajemen proyeknya.
+ 
+Selain itu, penelitian ini secara spesifik menerapkan tahapan Prototyping (melalui demonstrasi dan evaluasi prototipe bersama perangkat desa) untuk mengatasi tantangan adopsi teknologi di Desa Kalipang, Kabupaten Grobogan, yang memiliki karakteristik demografi dan infrastruktur yang khas. Pendekatan ini memastikan sistem yang dirilis nantinya benar-benar aplikatif dan mudah digunakan oleh sasaran pengguna..
+
+
+
+
+BAB II TINJAUAN PUSTAKA 
+ 
+2.1 Konsep Sistem Informasi Desa &amp; E-Government
+Sistem Informasi Desa (SID) merupakan bagian integral dari implementasi Electronic Government (E-Government) di tingkat pemerintahan terkecil di Indonesia. E-Government didefinisikan sebagai pemanfaatan teknologi informasi dan komunikasi (TIK) oleh instansi pemerintah untuk meningkatkan efisiensi, efektivitas, transparansi, dan akuntabilitas pelayanan public  CITATION Ind02 \l 1033 (Indrajit, 2002). Implementasi E-Government bertujuan untuk mentransformasi hubungan antara pemerintah dan masyarakat (G2C - Government to Citizens) dari yang bersifat birokratis-manual menjadi pelayanan yang responsif dan digital. 
+Dasar hukum pengembangan SID di Indonesia merujuk pada Undang-Undang Nomor 6 Tahun 2014 tentang Desa, yang mengamanatkan pemerintah desa untuk mengembangkan sistem informasi guna mendukung pembangunan dan pemberdayaan masyarakat. SID berfungsi tidak hanya sebagai alat administrasi, tetapi juga sebagai media transparansi anggaran dan potensi desa  CITATION Rep14 \l 1033 (Republik Indonesia, 2014). Dalam paradigma Smart Village, SID menjadi pilar utama "Smart Government" yang memungkinkan tata kelola desa yang cerdas melalui integrasi data kependudukan, pengelolaan aset, dan layanan publik digital.
+Implementasi SID yang efektif terbukti mampu mengatasi hambatan geografis dan waktu dalam pelayanan publik. Studi menunjukkan bahwa desa yang menerapkan SID mengalami peningkatan signifikan dalam akurasi data penduduk dan kecepatan pelayanan administrasi  CITATION Ind25 \l 1033 (Indana, 2025). Namun, keberhasilan E-Government di tingkat desa sangat bergantung pada kesiapan infrastruktur dan literasi digital aparat desa serta masyarakatnya.
+
+Website &amp; Portal Informasi
+Website adalah kumpulan halaman web yang saling terhubung dalam sebuah domain di jaringan World Wide Web (WWW). Dalam konteks pemerintahan, portal informasi desa berbasis web berfungsi sebagai "wajah digital" desa yang menyediakan akses informasi tanpa batas ruang dan waktu. Portal informasi modern (Web 2.0) tidak lagi bersifat statis (hanya menampilkan informasi satu arah), tetapi dinamis dan interaktif, memungkinkan pengguna untuk berinteraksi dengan sistem  CITATION Sib13 \l 1033 (Sibero, 2013).
+Portal informasi desa yang baik harus menyajikan konten yang relevan dengan kebutuhan warga, seperti:
+Profil Desa: Sejarah, visi-misi, dan struktur organisasi pemerintah desa.22
+Data Transparansi: Informasi APBDes dan realisasi pembangunan.
+Potensi Desa: Promosi produk unggulan UMKM dan pariwisata lokal untuk mendukung ekonomi desa.
+Layanan Mandiri: Fitur yang memungkinkan warga mengurus administrasi atau menyampaikan aspirasi secara mandiri.
+Penggunaan kerangka kerja (framework) dalam pengembangan website desa, seperti Laravel atau CodeIgniter, telah menjadi standar industri karena menawarkan keamanan, skalabilitas, dan kemudahan pemeliharaan dibandingkan dengan pengembangan menggunakan PHP native.
+2.3 Sistem Layanan Pengaduan Masyarakat
+Sistem layanan pengaduan masyarakat adalah mekanisme formal yang disediakan oleh organisasi publik untuk menerima, mengelola, dan menindaklanjuti keluhan, kritik, atau saran dari pengguna layanan. Sistem ini merupakan instrumen vital dalam mewujudkan akuntabilitas publik dan prinsip Good Governance  CITATION Sed12 \l 1033 (Sedarmayanti, 2012). Tanpa sistem pengaduan yang efektif, pemerintah desa kehilangan umpan balik penting yang diperlukan untuk memperbaiki kualitas layanan dan infrastruktur.
+Sistem pengaduan berbasis web menawarkan keunggulan dibandingkan metode manual (kotak saran fisik atau lisan), antara lain:
+Aksesibilitas: Warga dapat melapor kapan saja tanpa harus datang ke kantor desa.
+Dokumentasi: Setiap laporan tercatat secara digital dalam basis data, mencegah hilangnya berkas pengaduan.
+Transparansi: Pelapor dapat melacak status tindak lanjut pengaduan mereka (apakah sedang diproses, ditolak, atau selesai) melalui fitur tracking.16
+Bukti Digital: Kemampuan mengunggah foto atau dokumen sebagai bukti pendukung memperkuat validitas laporan.
+Penelitian terdahulu menunjukkan bahwa implementasi sistem pengaduan digital di tingkat kecamatan dan desa mampu meningkatkan kepuasan masyarakat karena adanya kepastian waktu respon dan transparansi proses. 
+
+2.4 Metodologi Prototyping 
+Metodologi Prototyping adalah suatu paradigma pengembangan perangkat lunak yang berfokus pada penyajian model awal (prototipe) dari sistem yang akan dibangun kepada pengguna akhir (Pressman, 2020). Pendekatan ini sangat efektif digunakan ketika pengembang dan pengguna belum memiliki gambaran yang detail mengenai fungsionalitas sistem secara keseluruhan pada awal proyek.
+Dalam konteks pengembangan sistem informasi di lingkungan pemerintahan desa, metode ini sangat relevan. Perangkat desa seringkali memiliki keterbatasan dalam memformulasikan kebutuhan sistem secara teknis. Dengan adanya prototipe, pengguna dapat berinteraksi langsung dengan model aplikasi yang menyerupai hasil akhir, sehingga mereka dapat memberikan umpan balik (evaluasi) yang lebih akurat dan nyata.
+Metode Prototyping bersifat iteratif (berulang). Jika prototipe yang diajukan belum sesuai dengan kebutuhan pengguna, maka prototipe tersebut akan diperbaiki dan dikembangkan kembali hingga mencapai kesepakatan final antara pengembang dan pengguna.
+
+
+
+
+
+2.4.1 Gambaran Siklus Metode Prototyping
+
+Gambar 2.1 Siklus Metodologi Prototyping (Pressman, 2020)
+
+2.4.2 Tahapan Metodologi Prototyping
+Menurut Pressman (2020), model Prototyping memiliki lima tahapan utama dalam siklus pengembangannya, yaitu:
+Communication (Komunikasi): Tahap awal di mana pengembang dan pengguna (perangkat Desa Kalipang) bertemu untuk mendefinisikan tujuan keseluruhan perangkat lunak, mengidentifikasi kebutuhan apa saja yang sudah diketahui, dan memetakan area mana saja yang masih memerlukan definisi lebih lanjut.
+Quick Plan (Perencanaan Kilat): Berdasarkan hasil komunikasi, pengembang membuat perencanaan singkat secara cepat. Perencanaan ini berfokus pada aspek-aspek perangkat lunak yang akan terlihat langsung oleh pengguna.
+Modeling Quick Design (Pemodelan Desain Kilat): Pengembang merancang pemodelan sistem (seperti UML) dan desain antarmuka (User Interface) atau mockup secara cepat. Desain kilat ini menjadi dasar untuk pembuatan prototipe.
+Construction of Prototype (Pembentukan Prototipe): Tahap pengkodean (coding) di mana desain kilat diubah menjadi sebuah perangkat lunak awal (prototipe) yang sudah bisa dijalankan dan dioperasikan, meskipun fitur-fiturnya mungkin belum sempurna secara keseluruhan.
+Deployment Delivery &amp; Feedback (Penyerahan dan Umpan Balik): Prototipe yang telah dibangun diserahkan kepada pengguna (perangkat desa) untuk dievaluasi. Umpan balik dari pengguna digunakan untuk menyempurnakan kebutuhan (requirement) dan memperbaiki prototipe. Jika pengguna meminta perbaikan, tahapan akan diulang secara iteratif dari pembuatan desain kilat hingga prototipe tersebut disetujui sebagai produk final.
+
+2.5 Tools Pengembangan
+2.5.1 PHP dan Framework Laravel
+PHP (Hypertext Preprocessor) adalah bahasa pemrograman server-side yang dominan digunakan dalam pengembangan web. Untuk meningkatkan efisiensi dan keamanan, penelitian ini menggunakan Laravel, sebuah framework PHP yang populer. Laravel menerapkan arsitektur Model-View-Controller (MVC) yang memisahkan logika bisnis (Model), antarmuka pengguna (View), dan alur kontrol (Controller)  CITATION Rah22 \l 1033 (Raharjo, 2022). Laravel menyediakan fitur-fitur canggih seperti Eloquent ORM untuk manajemen database, sistem autentikasi bawaan, dan Blade templating engine yang mempercepat proses coding.
+
+2.5.2 Database MySQL
+MySQL adalah sistem manajemen basis data relasional (Relational Database Management System - RDBMS) yang bersifat open-source. MySQL dikenal karena kecepatan, keandalan, dan kemudahan penggunaannya. Dalam sistem ini, MySQL akan digunakan untuk menyimpan data terstruktur seperti data penduduk, akun pengguna, konten berita, dan arsip pengaduan masyarakat. Penggunaan MySQL sangat kompatibel dengan PHP dan Laravel.
+
+2.5.3 Unified Modeling Language (UML)
+UML adalah bahasa standar visualisasi untuk pemodelan sistem perangkat lunak. UML membantu pengembang dalam merancang arsitektur sistem sebelum kode ditulis. Diagram UML yang relevan dalam penelitian ini meliputi:
+Use Case Diagram: Menggambarkan interaksi antara aktor (Admin, User) dengan fitur-fitur sistem.
+Activity Diagram: Menjelaskan alur kerja operasional dalam sistem.
+Class Diagram: Menggambarkan struktur statis sistem dan hubungan antar objek/data.
+
+ 
+BAB III METODOLOGI PENELITIAN 
+  
+3.1 Jenis Penelitian 
+ Penelitian ini dikategorikan sebagai penelitian pengembangan atau Research and Development (R&amp;D) dalam bidang Rekayasa Perangkat Lunak. Penelitian R&amp;D adalah metode penelitian yang digunakan untuk menghasilkan produk tertentu dan menguji keefektifan produk tersebut  CITATION Sug19 \l 1033 (Sugiyono, 2019). Dalam konteks ini, produk yang dihasilkan adalah sistem informasi berbasis web. Sifat penelitian ini juga merupakan Applied Research (Penelitian Terapan), karena bertujuan untuk memberikan solusi praktis atas permasalahan spesifik yang dihadapi oleh Pemerintah Desa Kalipang dalam pengelolaan informasi dan pengaduan masyarakat.
+
+3.2 Fokus Penelitian 
+ Penelitian ini berfokus pada pengembangan aplikasi web yang memiliki dua modul utama:
+Modul Portal Informasi: Fitur untuk manajemen konten profil desa, berita, dan potensi desa.
+Modul Layanan Pengaduan: Fitur untuk pelaporan, verifikasi, tindak lanjut, dan pelacakan status pengaduan warga.
+Pengembangan sistem dilakukan dengan menerapkan metodologi Prototyping untuk memastikan proses pengembangan yang interaktif, di mana perangkat desa dapat mengevaluasi model awal aplikasi secara bertahap hingga sesuai dengan kebutuhan operasional mereka.
+
+
+
+
+
+center0Gambar 3.1 Diagram Alur Tahapan Penelitian
+Alur penelitian dirancang secara sistematis untuk memandu jalannya penelitian dari awal hingga akhir. Kerangka pikir penelitian digambarkan sebagai berikut:
+Identifikasi Masalah: Menemukan kesenjangan antara kondisi ideal (Smart Village) dengan kondisi nyata di Desa Kalipang (layanan manual, kurang transparan).
+Pengumpulan Data: Observasi dan wawancara untuk menggali User Requirement.
+Analisis dan Perancangan: Menganalisis kebutuhan sistem dan merancang solusi menggunakan UML dan desain Mockup UI/UX.
+Pengembangan Sistem (Prototyping): Implementasi kode program (Coding) yang dibagi dalam beberapa Sprint.
+Pengujian (Testing): Evaluasi sistem menggunakan Black Box Testing dan UAT.
+Kesimpulan dan Saran: Deployment sistem dan penarikan kesimpulan penelitian.
+
+3.4 Tahapan Penelitian
+Berdasarkan diagram alur desain sistem penelitian di atas, berikut adalah penjelasan rinci mengenai tahapan-tahapan yang dilakukan:
+
+3.4.1 Identifikasi Masalah
+Tahap ini merupakan titik awal penelitian, di mana peneliti melakukan analisis terhadap kondisi nyata yang terjadi di Desa Kalipang. Peneliti menemukan adanya kesenjangan (gap) antara kondisi ideal konsep Smart Village dengan kondisi operasional di lapangan yang masih didominasi oleh layanan manual. Masalah utama yang diidentifikasi meliputi keterlambatan penyampaian informasi, pengelolaan pengaduan yang tidak terdokumentasi, dan kurangnya transparansi tindak lanjut laporan warga.
+
+3.4.2 Studi Literatur
+Setelah masalah teridentifikasi, tahap selanjutnya adalah mengumpulkan landasan teori dan referensi yang relevan. Peneliti melakukan kajian pustaka terhadap buku, jurnal ilmiah, dan artikel terpercaya mengenai:
+Sistem Informasi Desa (SID) dan E-Government sebagai dasar konsep solusi.
+Metodologi Prototyping sebagai panduan manajemen pengembangan perangkat lunak.
+Teknologi Pengembangan, meliputi PHP, Framework Laravel, Database MySQL, dan UML (Unified Modeling Language).
+3.4.3 Pengumpulan Data
+Pada tahap ini, peneliti melakukan pengambilan data untuk menggali kebutuhan pengguna (User Requirement) dan mendapatkan informasi yang valid.
+Metode yang digunakan dalam proses pengumpulan data meliputi:
+Observasi (Pengamatan): Peneliti mengamati langsung proses pelayanan di Balai Desa Kalipang untuk memahami alur kerja manual, serta mencatat hambatan yang terjadi seperti antrian, ketiadaan petugas, atau berkas yang hilang.
+Wawancara (Interview): Dilakukan dengan teknik semi-terstruktur kepada Kepala Desa dan Perangkat Desa selaku pemangku kepentingan (stakeholder) kunci. Tujuannya adalah untuk mendefinisikan kebutuhan awal (requirement) dan memahami prioritas fitur yang dibutuhkan desa sebagai dasar pembuatan prototipe.Sumber Data 
+Data yang digunakan dalam penelitian ini bersumber dari dua kategori, yaitu:
+Data Primer: Data yang diperoleh langsung dari sumber aslinya di lokasi penelitian, meliputi:
+Hasil wawancara mendalam dengan Kepala Desa, Sekretaris Desa, dan perangkat desa Kalipang.
+Hasil observasi langsung terhadap proses pelayanan administrasi dan penanganan pengaduan manual.
+Data Sekunder: Data pendukung yang diperoleh dari sumber tidak langsung, meliputi:
+Dokumen profil desa, data monografi, dan statistik kependudukan Desa Kalipang tahun terbaru.
+Peraturan desa terkait pelayanan publik.
+Studi literatur terkait implementasi E-Government dan pengembangan web.
+3.4.4 Analisis dan Perancangan
+Setelah data terkumpul, peneliti menganalisis kebutuhan sistem dan merancang solusi teknis sebelum masuk ke tahap pengkodean. Tahapan ini meliputi:
+Analisis Kebutuhan: Menerjemahkan hasil wawancara menjadi dokumen kebutuhan sistem fungsional dan non-fungsional.
+Perancangan Alur Sistem (Flowchart): Membuat Flowchart untuk menjelaskan alur logika dan urutan proses kerja sistem, mulai dari pengguna mengakses website hingga penyelesaian laporan pengaduan.
+Perancangan Interaksi Sistem (UML): Menggunakan pemodelan Unified Modeling Language (UML) yang difokuskan pada pembuatan Use Case Diagram untuk memetakan interaksi serta hak akses antara aktor (Warga dan Admin) dengan fitur-fitur di dalam sistem.
+
+Gambar 3.2 Flowchart
+
+
+Gambar 3.3 Use Case Diagram
+
+
+3.4.5 Pengembangan Sistem (Prototyping)
+Tahap ini merupakan fase eksekusi pembuatan aplikasi menggunakan metode Prototyping yang bersifat iteratif (berulang). Proses ini dibagi menjadi beberapa tahapan siklus:
+Communication (Komunikasi): Peneliti berdiskusi dengan perangkat desa untuk menyepakati fitur-fitur dasar yang harus ada pada portal informasi dan layanan pengaduan.
+Quick Plan (Perencanaan Kilat): Menyusun rencana kerja singkat berdasarkan prioritas fitur yang paling krusial untuk segera divisualisasikan.
+Modeling Quick Design (Pemodelan Desain Kilat): Merancang antarmuka (User Interface) awal menggunakan prinsip mockup agar perangkat desa memiliki gambaran bentuk aplikasi.
+Construction of Prototype (Pembentukan Prototipe): Penulisan kode program (Coding) menggunakan bahasa PHP dengan Framework Laravel dan database MySQL untuk membangun versi awal aplikasi yang sudah bisa dioperasikan (prototipe).
+Deployment Delivery &amp; Feedback (Penyerahan dan Umpan Balik): Prototipe didemonstrasikan kepada perangkat desa. Jika terdapat masukan atau fitur yang dirasa kurang sesuai, peneliti akan kembali ke tahap Quick Design untuk memperbaiki prototipe tersebut. Siklus ini berulang hingga perangkat desa menyetujui bahwa prototipe sudah final dan siap untuk diuji secara menyeluruh.
+
+3.4.6 Pengujian (Testing)
+Setelah sistem berhasil dikembangkan, dilakukan evaluasi untuk memastikan kualitas perangkat lunak:
+Black Box Testing: Pengujian fungsional untuk memastikan setiap tombol, formulir, dan menu berjalan sesuai logika tanpa melihat kode program di dalamnya.
+User Acceptance Test (UAT): Pengujian penerimaan oleh pengguna (Warga dan Perangkat Desa) untuk mengukur tingkat kepuasan dan kemudahan penggunaan sistem sebelum dirilis resmi.
+
+3.4.7 Implementasi dan Kesimpulan
+Tahap terakhir dari alur penelitian ini adalah:
+Deployment: Melakukan instalasi sistem pada server/hosting agar dapat diakses secara online oleh masyarakat Desa Kalipang.
+Penarikan Kesimpulan: Merangkum seluruh hasil penelitian, menjawab rumusan masalah, dan memberikan saran untuk pengembangan selanjutnya berdasarkan hasil implementasi.
+
+Daftar Pustaka 
+ 
+
+Alam, M. D., &amp; Azizah. (2024). Perancangan sistem informasi desa menggunakan metode prototyping. Jurnal Teknologi dan Sistem Informasi.
+Asosiasi Penyelenggara Jasa Internet Indonesia (APJII). (2024). Laporan survei penetrasi internet Indonesia 2024. APJII.
+Hardiyansyah. (2018). Kualitas pelayanan publik: Konsep, dimensi, indikator dan implementasinya. Gava Media.
+Hidayat, T. (2023). Penerapan keamanan data penduduk pada sistem informasi desa menggunakan kriptografi AES-256. Nama Jurnal Anda.
+Indana, N., &amp; Ilmananda. (2025). Perancangan sistem informasi surat administrasi penduduk elektronik menggunakan metode prototyping. Jurnal Teknologi Informasi dan Terapan.
+Indrajit, R. E. (2002). Electronic government: Strategi pembangunan dan pengembangan sistem pelayanan publik berbasis teknologi digital. Andi.
+International Telecommunication Union (ITU). (2024). Measuring digital development: Facts and figures 2024. ITU Publications.
+Kusuma, &amp; Wijaya. (2023). Analisis user experience (UX) pada portal informasi desa menggunakan metode design thinking. Nama Jurnal Anda.
+Lutfi. (2024). Rancang bangun sistem manajemen pengelolaan pelayanan dan pengaduan masyarakat di Desa Planggiran menggunakan metode prototyping. Nama Jurnal Anda.
+Ola, &amp; Hakim. (2025). Pengembangan aplikasi pengaduan masyarakat DP3A Kabupaten Nabire berbasis web menggunakan metode prototyping. Nama Jurnal Anda.
+Ombudsman Republik Indonesia. (2023). Laporan tahunan Ombudsman Republik Indonesia: Analisis maladministrasi dalam pelayanan publik desa. Ombudsman RI.
+Pemerintah Desa Kalipang. (2022). Profil kependudukan Desa Kalipang semester II tahun 2022. Sekretariat Desa Kalipang.
+Pemerintah Kabupaten Grobogan. (2024). Laporan implementasi sistem administrasi kependudukan daring (e-Simpel). Dinas Kependudukan dan Pencatatan Sipil Kabupaten Grobogan.
+Pemerintah Republik Indonesia. (2018). Peraturan Presiden Nomor 95 Tahun 2018 tentang Sistem Pemerintahan Berbasis Elektronik. Sekretariat Negara.
+Pratama, &amp; Nugraha. (2024). Implementasi notifikasi WhatsApp gateway pada sistem pengaduan masyarakat desa berbasis web. Nama Jurnal Anda.
+Pressman, R. S. (2020). Software engineering: A practitioner's approach. McGraw-Hill Education.
+Raharjo, B. (2022). Belajar otodidak framework Laravel (Membangun aplikasi web dengan PHP dan Laravel). Informatika.
+Ramadhan. (2025). Pengujian black box dan white box pada sistem pelayanan desa berbasis framework Laravel. Nama Jurnal Anda.
+Republik Indonesia. (2014). Undang-Undang Nomor 6 Tahun 2014 tentang Desa. Sekretariat Negara.
+Sari, &amp; Utami. (2024). Sistem informasi geografis (SIG) pemetaan potensi wisata dan UMKM desa berbasis web. Nama Jurnal Anda.
+Satzinger, J. W. (2016). Systems analysis and design in a changing world. Cengage Learning.
+Sedarmayanti. (2012). Good governance (kepemerintahan yang baik) dalam rangka otonomi daerah: Upaya membangun organisasi yang efektif dan efisien. Mandar Maju.
+Sibero, A. F. (2013). Web programming power pack. Mediakom.
+Sugiyono. (2019). Metode penelitian kuantitatif, kualitatif, dan R&amp;D. Alfabeta.
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+LAMPIRAN-LAMPIRAN
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+                         
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+JADWAL PENELITIAN 
+ 
+ 
+  
+No 
+Kegiatan 
+
+
+Bulan 
+
+
+
+
+Feb 
+Mar 
+Apr 
+Mei 
+Jun 
+Jul 
+Aug 
+1 
+Pengajuan Tema 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2 
+Studi literature 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+Penyusunan Proposal 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 
+Ujian proposal 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5 
+Revisi ujian proposal 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+6 
+Uji Instrumen 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7 
+Pengambilan data 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+8 
+Penyusunan laporan hasil 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+9 
+Sidang hasil 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+10 
+Pengumpulan dokumen 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+Lampiran 1 Jadwal penelitian 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Lampiran 2 Catatan hasil konsultasi skripsi 
+ 
+ 
+CATATAN HASIL KONSULTASI SKRIPSI 
+PROGRAM STUDI ILMU ILMU KOMPUTER 
+FAKULTAS SAINS DAN KESEHATAN 
+UNIVERSITAS AN NUUR, 2025 
+   
+Nama Mahasiswa   : Agus Condro Wibowo
+NIM  : 2207002
+Judul Penelitian :Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping  
+Nama Pembimbing  : Dhika Malita Puspita A, M.Kom
+  
+No 
+Tanggal 
+Materi Bimbingan 
+Ttd Pembimbing 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+   
+ 
+CATATAN HASIL KONSULTASI SKRIPSI 
+PROGRAM STUDI ILMU ILMU KOMPUTER 
+FAKULTAS SAINS DAN KESEHATAN 
+UNIVERSITAS AN NUUR, 2025 
+  
+Nama Mahasiswa  : Agus Condro Wibowo
+NIM  : 2207002
+Judul Penelitian  : Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping 
+Nama Pembimbing  : Eko Supriyadi, S.Kom.,M.Tr.Kom
+  
+No 
+Tanggal 
+Materi Bimbingan 
+Ttd Pembimbing 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+     
+ 
+
+ 
+Lampiran 3 Form kesediaan sebagai pembimbing skripsi 
+ 
+FORM KESEDIAAN SEBAGAI PEMBIMBING SKRIPSI
+ 
+Saya yang bertanda tangan di bawah ini;  
+Nama   : Dhika Malita Puspita A, M.Kom
+NIDN  : 0611039202  
+Unit Kerja : Ketua Program Studi Ilmu Komputer  
+ 
+Dengan ini menyatakan diri untuk (BERSEDIA / TIDAK BERSEDIA)* sebagai  
+(PEMBIMBING I / PEMBIMBING II)* dalam penyusunan Skripsi Mahasiswa  Program Studi S1 Ilmu Komputer Fakultas Sains dan Kesehatan Universitas An 
+Nuur Tahun 2025 untuk mahasiswa; 
+ 
+Nama   : Agus Condro Wibowo
+NIM  : 2207002
+Judul Penelitian  : Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping 
+ 
+Demikian pernyataan ini saya buat, semoga dapat dipergunakan sebagaimana  mestinya.  
+ 
+Purwodadi, 27 Februari 2025  
+Yang membuat pernyataan  
+ 
+ 
+ 
+ Dhika Malita Puspita A, M.Kom 
+NIDN. 0611039202 
+
+ 
+ 
+FORM KESEDIAAN SEBAGAI PEMBIMBING SKRIPSI
+ 
+Saya yang bertanda tangan di bawah ini;  
+Nama  : Eko Supriyadi, S.Kom.,M.Tr.Kom
+NIDN  : 0618037601 
+Unit Kerja : Dosen Program Studi Ilmu Komputer  
+ 
+Dengan ini menyatakan diri untuk (BERSEDIA / TIDAK BERSEDIA)* sebagai  
+(PEMBIMBING I / PEMBIMBING II)* dalam penyusunan Skripsi Mahasiswa  Program Studi S1 Ilmu Komputer Fakultas Sains dan Kesehatan Universitas An 
+Nuur Tahun 2025 untuk mahasiswa; 
+ 
+Nama    : Agus Condro Wibowo
+NIM    : 2207002
+Judul Penelitian :Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping 
+ 
+Demikian pernyataan ini saya buat, semoga dapat dipergunakan sebagaimana  mestinya.  
+ 
+Purwodadi, 27 Februari 2025 
+Yang membuat pernyataan  
+ 
+ 
+ 
+Eko Supriyadi, S.Kom.,M.Tr.Kom
+NIDN. 0618037601
+ 
+ 
+ 
+
+Lampiran 4 Fakta integritas pembimbing 
+FAKTA INTEGRITAS PEMBIMBING
+ 
+Saya yang bertanda tangan di bawah ini;  
+Nama  : Dhika Malita Puspita A, M.Kom  
+NIDN  : 0618037601 
+Unit Kerja  : Ketua Program Studi Ilmu Komputer  
+ 
+Dengan ini menyatakan diri untuk BERSEDIA sebagai PEMBIMBING dalam  penyusunan Skripsi Mahasiswa Program Studi S1 Ilmu Komputer Fakultas Sains  dan Kesehatan Universitas An Nuur Tahun Ajaran 2020 / 2021 dengan ketentuan; 
+ 
+ 
+Purwodadi, 27 Februari 2025  
+Yang membuat pernyataan  
+ 
+ 
+ 
+ 
+ Dhika Malita Puspita A, M.Kom 
+NIDN. 0611039202
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+FAKTA INTEGRITAS PEMBIMBING
+ 
+Saya yang bertanda tangan di bawah ini;  
+Nama  : Eko Supriyadi.,S.Kom.,M.Tr.Kom  
+NIDN  : 0618037601 
+Unit Kerja : Dosen Program Studi Ilmu Komputer  
+ 
+Dengan ini menyatakan diri untuk BERSEDIA sebagai PEMBIMBING dalam  penyusunan Skripsi Mahasiswa Program Studi S1 Ilmu Komputer Fakultas Sains  dan Kesehatan Universitas An Nuur Tahun Ajaran 2020 / 2021 dengan ketentuan; 
+ 
+Purwodadi, 27 Februari 2025  
+Yang membuat pernyataan  
+ 
+ 
+ 
+ Eko Supriyadi.,S.Kom.,M.Tr.Kom
+NIDN. 0618037601 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+ 
+Lampiran 5 Form kesediaan sebagai penguji 
+FORM KESEDIAAN SEBAGAI PENGUJI
+ 
+Saya yang bertanda tangan di bawah ini;  
+Nama  : Andri Triyono, S. T., M.T  
+NIDN  : 0620068802  
+Unit Kerja : Dosen Ilmu Komputer 
+ 
+Dengan ini menyatakan diri untuk (BERSEDIA / TIDAK BERSEDIA)* sebagai  
+PENGUJI (PROPOSAL / HASIL)* Skripsi Mahasiswa Program Studi S1 Ilmu  Komputer Fakultas Sains dan Kesehatan Universitas An Nuur Tahun 2025 untuk  mahasiswa;  
+Nama    : Agus Condro Wibowo 
+NIM    :2207002  
+Judul Penelitian :Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping 
+ 
+Demikian pernyataan ini saya buat, semoga dapat dipergunakan sebagaimana  mestinya.  
+ 
+Purwodadi, 27 Februari 2025  
+Yang membuat pernyataan  
+ 
+ 
+ 
+Andri Triyono, S.T., M.T  
+NIDN. 0620068802 
+ 
+ 
+
+ 
+ 
+FORM KESEDIAAN SEBAGAI PENGUJI
+ 
+Saya yang bertanda tangan di bawah ini;  
+Nama    : Dhika Malita Puspita Arum, M.Kom
+NIDN  : 0611039202  
+Unit Kerja : Ketua Program Studi Ilmu Komputer  
+ 
+Dengan ini menyatakan diri untuk (BERSEDIA / TIDAK BERSEDIA)* sebagai  
+PENGUJI (PROPOSAL / HASIL)* Skripsi Mahasiswa Program Studi S1 Ilmu  Komputer Fakultas Sains dan Kesehatan Universitas An Nuur Tahun 2025 untuk  mahasiswa;  
+Nama     : Agus Condro Wibowo
+NIM   : 2207002
+Judul Penelitian :Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping 
+ 
+Demikian pernyataan ini saya buat, semoga dapat dipergunakan sebagaimana  mestinya. 
+ 
+Purwodadi, 27 Februari 2025  
+Yang membuat pernyataan  
+ 
+ 
+ 
+Dhika Malita Puspita Arum, M.Kom 
+NIDN. 0611039202 
+ 
+ 
+
+
+
+ 
+FORM KESEDIAAN SEBAGAI PENGUJI
+ 
+Saya yang bertanda tangan di bawah ini;  
+Nama        : Eko Supriyadi, S.Kom., M.Tr.Kom
+NIDN  : 0618037601 
+Unit Kerja : Dosen Program Studi Ilmu Komputer  
+Dengan ini menyatakan diri untuk (BERSEDIA / TIDAK BERSEDIA)* sebagai  
+PENGUJI (PROPOSAL / HASIL)* Skripsi Mahasiswa Program Studi S1 Ilmu  Komputer Fakultas Sains dan Kesehatan Universitas An Nuur Tahun 2025 untuk  mahasiswa;  
+Nama   : Agus Condro Wibowo
+NIM  : 2207002
+Judul Penelitian : Pengembangan Portal Informasi dan Layanan Pengaduan Masyarakat Desa Kalipang Berbasis Web Menggunakan Metode Prototyping 
+ 
+Demikian pernyataan ini saya buat, semoga dapat dipergunakan sebagaimana  mestinya. 
+ 
+Purwodadi, 27 Februari 2025  
+Yang membuat pernyataan  
+ 
+ 
+ 
+Eko Supriyadi, S.Kom., M.Tr.Kom 
+NIDN. 0618037601 
+ 
